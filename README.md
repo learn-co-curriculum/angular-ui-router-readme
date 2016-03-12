@@ -1,4 +1,4 @@
-# What is ui-router? 
+# What is ui-router?
 
 ## Overview
 
