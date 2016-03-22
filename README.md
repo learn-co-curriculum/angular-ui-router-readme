@@ -15,7 +15,9 @@
 
 `uiRouter` is quite similar to `ngRoute`, but each "route" is known as a "state". We define states, not routes.
 
-Each state that we define is quite similar to a route in `ngRoute`, but we have to give each state a name too. This allows us to have children states inside of a state.
+Each state that we define is quite similar to a route in `ngRoute`, but we have to give each state a name too. This allows us to have children states inside of a state (we'll go onto nested states/views soon).
+
+This is awesome - you might've noticed how in the last lab we've got three links to `#/user/name`. Instead, with uiRouter, we can use the state names instead of URLs. This saves us time in the long run - if we have 100 different places in our app that link to the user page, imagine having to update all of them to the URL if it ever changed! However, as we've got state names, we won't have to update any of them.
 
 Let's take a look at how we'd define a route in `ngRoute`:
 
@@ -54,7 +56,7 @@ We'll go into more advanced concepts with `uiRouter` soon - things such as neste
 
 ## uiSref
 
-`uiRouter` also provides a directive named `ui-sref`. We can use this on our hyperlinks to generate links to our states. We pass in the state name as the value and `uiRouter` will replace the link with a link to our state.
+`uiRouter` also provides a directive named `ui-sref`. We mentioned earlier about linking to states by name - this is where `uiSref` comes in. We can use this on our hyperlinks to generate links to our states. We pass in the state name as the value and `uiRouter` will replace the link with a link to our state.
 
 Say we've got a state named `docs`, that links to `/documentation/v1`:
 
