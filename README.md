@@ -56,7 +56,7 @@ We'll go into more advanced concepts with `uiRouter` soon - things such as neste
 
 ## uiSref
 
-`uiRouter` also provides a directive named `ui-sref`. We mentioned earlier about linking to states by name - this is where `uiSref` comes in. We can use this on our hyperlinks to generate links to our states. We pass in the state name as the value and `uiRouter` will replace the link with a link to our state.
+`uiRouter` also provides a directive named `ui-sref` (as in, [$state.href()](http://angular-ui.github.io/ui-router/site/#/api/ui.router.state.directive:ui-sref)). We mentioned earlier about linking to states by name - this is where `uiSref` comes in. We can use this on our hyperlinks to generate links to our states. We pass in the state name as the value and `uiRouter` will replace the link with a link to our state.
 
 Say we've got a state named `docs`, that links to `/documentation/v1`:
 
