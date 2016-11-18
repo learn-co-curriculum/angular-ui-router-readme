@@ -67,8 +67,8 @@ angular
 		$stateProvider
 			.state('docs', {
 				url: '/documentation/v1',
-				templateUrl: 'views/user.html',
-				controller: 'UserController'
+				templateUrl: 'views/documentation.html',
+				controller: 'DocsController'
 			});
 	});
 ```
@@ -104,3 +104,5 @@ When we're actually on the docs page, that link will get the `active` class appl
 ```
 
 Simple!
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/angular-ui-router-readme'>Angular ui-Router </a> on Learn.co and start learning to code for free.</p>
